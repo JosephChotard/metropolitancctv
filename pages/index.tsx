@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from './Index.module.scss'
 import Link from 'next/link'
 import React from 'react'
