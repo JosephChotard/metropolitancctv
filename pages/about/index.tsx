@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Home() {
+export default function About() {
   return (
     <div className="content">
       <img src="/about/installing.jpeg" alt="Man installing CCTV camera" className="right" />

@@ -156,7 +156,19 @@ main {
 }
 
 .content {
-  line-height: 1.4em;
+  line-height: 1.5em;
+
+  h1 {
+    color: #325aca;
+    margin: 1em 0;
+    text-align: center;
+    font-size: 3em;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+  }
 
   img {
     margin: 0.3em;
