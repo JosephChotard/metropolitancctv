@@ -146,3 +146,20 @@ footer {
     color: var(--blue);
   }
 }
+
+main {
+  min-height: 80vh;
+}
+
+.right {
+  float: right;
+}
+
+.content {
+  line-height: 1.4em;
+
+  img {
+    margin: 0.3em;
+    border-radius: 10px;
+  }
+}

@@ -50,7 +50,9 @@ function MyApp({ Component, pageProps }) {
           </Link>
         ))}
       </nav>
-      <Component {...pageProps} />
+      <main>
+        <Component {...pageProps} />
+      </main>
       <footer>
         <div>
           <h4>ABOUT</h4>

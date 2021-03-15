@@ -31,11 +31,11 @@ export default function Testimonials() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setSelected(selected === TESTIMONIALS.length - 1 ? 0 : selected + 1)
-    }, 5000);
+    }, 5000)
     return () => {
-      clearInterval(interval);
+      clearInterval(interval)
     }
-  }, [selected]);
+  }, [selected])
 
 
   return (
