@@ -13,7 +13,7 @@ export default function handler(req, res) {
   const mail = {
     from: 'contactform@metropolitancctv.co.uk',
     replyTo: req.body.email,
-    to: 'josephchotard1@gmail.com',
+    to: process.env.EMAIL_USERNAME,
     subject: 'Metropolitan CCTV Contact Form',
     text: `Name: ${req.body.name}\nEmail: <${req.body.email}>\nMessage:\n${req.body.message}`,
   }
