@@ -68,7 +68,6 @@ Our systems are designed for you and offer a wide range of features
       </p>
 
       <p>We do not have a budget range as it is counter productive to spend time and money on a CCTV system that is not fit for purpose. However, we do offer a professional security system at a price that won't break the bank.
-
       </p>
 
       <div className='imageList'>
