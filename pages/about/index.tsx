@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="content">
       <h1>ABOUT US</h1>
-      <p>Metropolitan Security Services & Metropolitan CCTV are dedicated to providing excellent customer satisfaction.</p>
+      <p>Metropolitan Security Solutions & Metropolitan CCTV are dedicated to providing excellent customer satisfaction.</p>
 
       <p>We believe that it is every home and business owners right to know that their home, premises, family, business and workforce are safe and protected as possible.</p>
 
@@ -19,7 +19,7 @@ export default function About() {
 
       <p>Whatever your Security requirements we are able to provide a solution.</p>
 
-      <p>We offer a comprehensive range of Security Services..</p>
+      <p>We offer a comprehensive range of Security Solutions..</p>
 
       <ul>
         <li>CCTV</li>

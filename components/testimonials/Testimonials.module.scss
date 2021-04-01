@@ -1,10 +1,27 @@
+@import "/styles/include-media.scss";
+
 .testimonials {
   margin: 2em 0;
-  display: grid;
-  grid-template-columns: 2fr 8fr;
+  display: flex;
+
   gap: 1em;
 
+  @include media("<=tablet") {
+    flex-direction: column-reverse;
+  }
+
   .names {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+
+    @include media("<=tablet") {
+      flex-direction: row;
+
+      p {
+        display: none;
+      }
+    }
     button {
       margin: 0.5em 0;
       padding: 0.4em;
@@ -30,6 +47,7 @@
   }
 
   .review {
+    flex: 8;
     line-height: 1.5em;
     font-size: 1.2em;
     display: flex;

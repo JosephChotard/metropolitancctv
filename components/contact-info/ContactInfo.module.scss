@@ -1,6 +1,7 @@
 .getInTouch {
   display: flex;
   margin: 1em 0;
+  flex-wrap: wrap-reverse;
 
   > * {
     flex: 1;

@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { MENU } from '../lib/menu'
 import { AiFillPhone } from 'react-icons/ai'
 import { MdEmail } from 'react-icons/md'
+import { CgMenu } from 'react-icons/cg'
+import { Navbar } from '@components/navbar/Navbar'
 
 
 function MyApp({ Component, pageProps }) {
@@ -17,12 +19,14 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <header>
-        <div id="logo">
-          <img
-            src='/logo.png'
-            alt='Metropolitan CCTV Security Specialists'
-          />
-        </div>
+        <Link href='/' >
+          <a id="logo">
+            <img
+              src='/logo.png'
+              alt='Metropolitan CCTV Security Specialists'
+            />
+          </a>
+        </Link>
         <div id='contact'>
           <p>Contact Us Today On:</p>
           <p>Tel: <a href="tel:02037438911">02037438911</a></p>
@@ -44,11 +48,15 @@ function MyApp({ Component, pageProps }) {
         </div>
       </header>
       <nav>
-        {MENU.map((menu, index) => (
-          <Link href={menu.link} key={index}>
-            <a className='button'>{menu.name}</a>
-          </Link>
-        ))}
+        {/* <button className='menu'><CgMenu />MENU</button>
+        <div className='nav'>
+          {MENU.map((menu, index) => (
+            <Link href={menu.link} key={index}>
+              <a className='button'>{menu.name}</a>
+            </Link>
+          ))}
+        </div> */}
+        <Navbar />
       </nav>
       <main>
         <Component {...pageProps} />
