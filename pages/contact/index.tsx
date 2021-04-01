@@ -1,13 +1,19 @@
 import ContactInfo from '@components/contact-info/ContactInfo'
 import React from 'react'
+import { FaCheckCircle } from 'react-icons/fa'
 import styles from './Contact.module.scss'
 
 export default function IntruderAlarms() {
+  const [loading, setLoading] = React.useState(false)
+  const [sent, setSent] = React.useState(false)
+  const [errorMessage, setErrorMessage] = React.useState('')
 
   const registerUser = async event => {
     event.preventDefault()
-
-    const res = await fetch('/api/contact', {
+    setLoading(true)
+    setErrorMessage('')
+    
+    fetch('/api/contact', {
       body: JSON.stringify({
         name: event.target.name.value,
         phone: event.target.phone.value,
@@ -19,34 +25,62 @@ export default function IntruderAlarms() {
       },
       method: 'POST'
     })
-
-    const result = await res.json()
-    console.log(result)
-    // result.user => 'Ada Lovelace'
+      .then(function (response) {
+        console.log(response)
+        if (!response.ok) {
+          throw Error(response.statusText)
+        }
+        return response
+      })
+      .then(() => setSent(true))
+      .catch(e => {
+        console.error(e)
+        setErrorMessage('Something went wrong, please try again later')
+      })
+      .finally(() => setLoading(false))
   }
+
+  console.log(sent, loading)
+
   return (
     <div className={`content`}>
       <h1>CONTACT METROPOLITAN CCTV</h1>
       
-      <form onSubmit={registerUser} className={styles.form}>
-        <label>
+      {
+        sent ?
+          (
+            <div className={styles.success}>
+              <h3>We'll get back to you as soon as we can!</h3>
+              <FaCheckCircle />
+              <button onClick={() => setSent(false)}>Send another message?</button>
+            </div>
+          )
+          : (
+            <form onSubmit={registerUser} className={styles.form}>
+              <label>
           Name:
-          <input type="text" id="name" autoComplete="name" placeholder="Your Name"/>
-        </label>
-        <label>
+                <input type="text" id="name" autoComplete="name" placeholder="Your Name"/>
+              </label>
+              <label>
           Phone:
-          <input type="text" id="phone" autoComplete="phone" placeholder="Your Phone Number"/>
-        </label>
-        <label>
+                <input type="text" id="phone" autoComplete="phone" placeholder="Your Phone Number"/>
+              </label>
+              <label>
           Email:
-          <input type="text" id="email" autoComplete="email" placeholder="Your email"/>
-        </label>
-        <label>
+                <input type="text" id="email" autoComplete="email" placeholder="Your email"/>
+              </label>
+              <label>
           Message:
-          <textarea id="message" placeholder="How can we help?"/>
-        </label>
-        <button type="submit" className="button">Send Message</button>
-      </form>
+                <textarea id="message" placeholder="How can we help?"/>
+              </label>
+              <p className={styles.error}>{errorMessage}</p>
+              <button type="submit" className="button" disabled={loading}>
+                {loading ? (<div className={styles.loading}></div>) : <>Send Message</>}
+              </button>
+            </form>
+          )
+      }
+      
 
       <ContactInfo />
     </div>

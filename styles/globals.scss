@@ -156,12 +156,18 @@ footer {
     background-color: #d3d5d4;
     color: var(--blue);
   }
+
+  &:disabled {
+    background-color: #d3d5d4;
+    color: black;
+    cursor: not-allowed;
+  }
 }
 
 main {
   min-height: 80vh;
 
-  @include media("<=tablet") {
+  @include media("<=desktop") {
     margin: 0 5px;
   }
 }
