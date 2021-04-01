@@ -182,7 +182,14 @@ main {
 // }
 
 .content {
-  line-height: 1.5em;
+  line-height: 1.6em;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+
+  &.center,
+  .center {
+    text-align: center;
+  }
 
   h1 {
     color: #325aca;
@@ -202,5 +209,9 @@ main {
     display: inline;
     max-width: 100%;
     float: right;
+  }
+
+  ul {
+    list-style-position: inside;
   }
 }

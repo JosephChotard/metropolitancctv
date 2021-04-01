@@ -21,7 +21,7 @@ export const MENU = [
   },
   {
     name: 'REVIEWS',
-    link: '/home'
+    link: '/reviews'
   },
   {
     name: 'GALLERY',

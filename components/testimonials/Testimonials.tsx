@@ -11,7 +11,7 @@ const TESTIMONIALS = [
   {
     name: "Dee Howarth",
     date: "Tuesday, June 11, 2019",
-    description: "Reliable, honest & did a great job. Thankyou very much, would recommend & will use again!"
+    description: "Reliable, honest & did a great job. Thank you very much, would recommend & will use again!"
   },
   {
     name: "Scott Allen",
