@@ -27,6 +27,12 @@ export const Navbar = () => {
     <>
       <nav className={styles.nav}>
         <div className={styles.headNav}>
+          <Link href='/'>
+            <a className={styles.logo}>
+              <img src="/logo.svg" alt="" />
+              Metropolitan CCTV
+            </a>
+          </Link>
           <button
             className={styles.menuBtn}
             onClick={handleClick}

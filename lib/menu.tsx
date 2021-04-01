@@ -8,8 +8,8 @@ export const MENU = [
     link: '/about'
   },
   {
-    name: 'OTHER SERVICES',
-    link: '/services'
+    name: 'CONTACT US',
+    link: '/contact'
   },
   {
     name: 'INTRUDER ALARMS',
@@ -20,16 +20,8 @@ export const MENU = [
     link: '/cctv'
   },
   {
-    name: 'REVIEWS',
-    link: '/reviews'
-  },
-  {
     name: 'GALLERY',
     link: '/gallery'
-  },
-  {
-    name: 'CONTACT US',
-    link: '/contact'
   },
   {
     name: 'SECURITY FENCING & GATES',
@@ -42,17 +34,29 @@ export const MENU = [
   {
     name: 'DOG HANDLER',
     link: '/dog-handler'
-  },{
+  },
+  {
     name: 'SECURITY ASSESSMENTS',
     link: '/security-assessments'
-  },{
+  },
+  {
     name: 'LOCKSMITH',
     link: '/locksmith'
-  },{
+  },
+  {
     name: 'SAFES',
     link: '/safes'
-  },{
+  },
+  {
     name: ' VEHICLE CCTV & TRACKERS',
     link: '/vehicle-cctv-trackers'
-  }
+  },
+  {
+    name: 'OTHER SERVICES',
+    link: '/services'
+  },
+  {
+    name: 'REVIEWS',
+    link: '/reviews'
+  },
 ]

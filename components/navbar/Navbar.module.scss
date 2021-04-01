@@ -10,16 +10,29 @@
   width: 100%;
   padding: 10px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
 
   @include media(">tablet") {
     display: none;
   }
-}
 
-.menuBtn {
-  color: white;
-  font-size: 1.3em;
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    img {
+      width: 2em;
+      color: white;
+      margin-right: 5px;
+    }
+  }
+
+  .menuBtn {
+    color: white;
+    font-size: 1.3em;
+  }
 }
 
 .navLinks {
@@ -30,18 +43,6 @@
   margin-top: -$gap;
   margin-bottom: 1em;
 
-  @include media("<=tablet") {
-    &.hidden {
-      display: none;
-    }
-    flex-wrap: nowrap;
-    flex-direction: column;
-
-    a {
-      width: 100%;
-    }
-  }
-
   a {
     flex: 1;
     margin-left: $gap;
@@ -51,6 +52,20 @@
       &.button {
         padding: 6px;
       }
+    }
+  }
+
+  @include media("<=tablet") {
+    &.hidden {
+      display: none;
+    }
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: 0;
+
+    a {
+      width: 100%;
+      margin-left: 0;
     }
   }
 }
