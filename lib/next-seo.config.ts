@@ -1,5 +1,6 @@
 export default {
   titleTemplate: '%s | Metropolitan CCTV',
+  title: ' ',
   description: 'Metropolitan CCTV are the UK\'s best security specialists',
   openGraph: {
     type: 'website',
