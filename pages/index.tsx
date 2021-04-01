@@ -4,10 +4,15 @@ import React from 'react'
 import Testimonials from '@components/testimonials/Testimonials'
 import CallUsNow from '@components/call-us-now/CallUsNow'
 import ContactInfo from '@components/contact-info/ContactInfo'
+import { NextSeo } from 'next-seo'
 
 export default function Home() {
   return (
     <>
+      <NextSeo
+        title='Home'
+        description='Metropolitan CCTV, give us a call now for a quote'
+      />
       <div className={styles.greydiv}></div>
       <div className={styles.pages}>
         <Link href='/cctv'>

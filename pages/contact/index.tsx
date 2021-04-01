@@ -39,9 +39,7 @@ export default function IntruderAlarms() {
       })
       .finally(() => setLoading(false))
   }
-
-  console.log(sent, loading)
-
+  
   return (
     <div className={`content`}>
       <h1>CONTACT METROPOLITAN CCTV</h1>

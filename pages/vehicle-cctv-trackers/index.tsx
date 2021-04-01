@@ -1,8 +1,13 @@
+import { NextSeo } from 'next-seo'
 import React from 'react'
 
-export default function SecurityAssessment() {
+export default function Vehicle() {
   return (
     <div className={`content`}>
+      <NextSeo
+        title='VEHICLE CCTV & TRACKERS'
+        description='Metropolitan CCTV, We provide and install a varied range of Vehicle CCTV Multi Camera Systems'
+      />
       <h1>VEHICLE CCTV & TRACKERS</h1>
       <p>We provide and install a varied range of Vehicle CCTV Multi Camera Systems providing all round coverage, including in Cab Camera, Tamper Proof DVR. Insurance Approved Vehicle CCTV Systems.</p>
 
