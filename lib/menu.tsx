@@ -30,5 +30,29 @@ export const MENU = [
   {
     name: 'CONTACT US',
     link: '/contact'
+  },
+  {
+    name: 'SECURITY FENCING & GATES',
+    link: '/fences-gates'
+  },
+  {
+    name: 'SECURITY DOGS',
+    link: '/dogs'
+  },
+  {
+    name: 'DOG HANDLER',
+    link: '/dog-handler'
+  },{
+    name: 'SECURITY ASSESSMENTS',
+    link: '/security-assessments'
+  },{
+    name: 'LOCKSMITH',
+    link: '/locksmith'
+  },{
+    name: 'SAFES',
+    link: '/safes'
+  },{
+    name: ' VEHICLE CCTV & TRACKERS',
+    link: '/vehicle-cctv-trackers'
   }
 ]
