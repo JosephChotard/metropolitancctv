@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import Testimonials from '@components/testimonials/Testimonials'
 import CallUsNow from '@components/call-us-now/CallUsNow'
+import ContactInfo from '@components/contact-info/ContactInfo'
 
 export default function Home() {
   return (
@@ -48,7 +49,7 @@ export default function Home() {
         <p>London - 0203 743 8911 | South Yorkshire - 0114 294 5565 | info@metropolitancctv.co.uk</p>
       </div>
       <Testimonials />
-
+      <ContactInfo />
     </>
   )
 }

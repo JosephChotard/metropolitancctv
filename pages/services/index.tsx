@@ -29,6 +29,12 @@ Our safes can be any size, insurance rating and fire rating. We are able to prov
 Metropolitan CCTV provide a range of Vehicle CCTV. Multi Camera Systems providing all round coverage, including in Cab Camera, Tamper Proof DVR. Insurance Approved Vehicle CCTV Systems.
 
 We also provide a range of Dash Cams for self installation on your private car. This allows you to have peace of mind while out driving. Should an accident occur you can not always rely on other drivers honesty or witness's if you have any incident on  CCTV this evidence is irrefutable should any insurance claim be made.
+              
+      <div className='imageList'>
+        <img src="/services/1.png" alt="CCTV Cameras on pole" />
+        <img src="/services/2.png" alt="Mobile devices with CCTV views"/>
+        <img src="/services/3.png" alt="Camera monitoring hub"/>
+      </div>
 
       <h3>PERSONAL CCTV</h3>
 We provide a range of body worn CCTV for either self management or tamper proof management. For single sale or multiple purchases.

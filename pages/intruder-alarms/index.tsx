@@ -22,7 +22,13 @@ export default function IntruderAlarms() {
       </p>
       <p> We provide insurance approved alarms which can be monitored by an ARC or direct to your own phone.
 
-      </p>  
+      </p>
+      
+      <div className='imageList'>
+        <img src="/intruder/1.png" alt="Robber with crowbar" />
+        <img src="/intruder/2.png" alt="Robber backlit infront of house"/>
+        <img src="/intruder/3.png" alt="Keypad with Welcome Home written"/>
+      </div>
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import ContactInfo from '@components/contact-info/ContactInfo'
 import React from 'react'
 import styles from './Contact.module.scss'
 
@@ -25,7 +26,7 @@ export default function IntruderAlarms() {
   }
   return (
     <div className={`content`}>
-      <h1>CONTACT US</h1>
+      <h1>CONTACT METROPOLITAN CCTV</h1>
       
       <form onSubmit={registerUser} className={styles.form}>
         <label>
@@ -46,6 +47,8 @@ export default function IntruderAlarms() {
         </label>
         <button type="submit" className="button">Send Message</button>
       </form>
+
+      <ContactInfo />
     </div>
   )
 }
