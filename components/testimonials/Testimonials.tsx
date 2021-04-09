@@ -9,11 +9,6 @@ const TESTIMONIALS = [
     description: "What a fantastic service I received! Cannot recommend enough. I was interested in cctv for my own peace of mind and security of my property. Not only are the cameras excellent quality but I am able to access them any time and anywhere on my mobile phone or tablet. For additional peace of mind they also installed an up to date burglar alarm which included a device that rings me when my burglar alarm has been triggered. Overall, great products and a reliable, friendly service!"
   },
   {
-    name: "Dee Howarth",
-    date: "Tuesday, June 11, 2019",
-    description: "Reliable, honest & did a great job. Thank you very much, would recommend & will use again!"
-  },
-  {
     name: "Scott Allen",
     date: "Wednesday, December 25, 2019",
     description: "I wanted a CCTV system different to what you find on the high st the camera system I had installed was a bespoke system I wanted cameras that you could actually see who the people actually are not a blurred picture that you see on most Cctv systems the quality of the cameras are brilliant not only in the day but night vision is truly amazing and I can watch real time Cctv on my iPhone anywhere in the world very professional company and the fitting is excellent very happy customer would definitely recommend 10/10"
